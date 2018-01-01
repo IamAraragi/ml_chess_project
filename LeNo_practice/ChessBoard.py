@@ -72,6 +72,7 @@ class ChessBoard(object):
             for c in column:
 
                 if piecesIndx == -1:
+                    #Empty position
                     self.positions.append(self.Position(r,c,"E"))
                 else:
                     self.positions.append(self.Position(r, c, self.whitePieces[piecesIndx]))
